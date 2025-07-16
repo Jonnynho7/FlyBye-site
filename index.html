@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Projeto - Módulo 13 | EBAC</title>
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 1050;
+        }
+
+        .carousel-item img {
+            z-index: 0;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <h1>FlyBye</h1>
+                <button type="button" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav nav-pills navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Places</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img class="d-block w-100 h-100"
+                    src="https://cdn.pixabay.com/photo/2025/07/10/21/29/coast-9707465_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Go to France</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100 h-100"
+                    src="https://cdn.pixabay.com/photo/2025/02/14/06/08/marina-bay-9405892_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Go to Singapore</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100 h-100"
+                    src="https://cdn.pixabay.com/photo/2023/01/22/23/46/beach-7737559_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Go to Brazil</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100 h-50"
+                    src="https://cdn.pixabay.com/photo/2025/04/24/10/06/lofoten-9555321_1280.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Go to Norway</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <div id="places" class="container pt-5 ">
+        <div class="row">
+            <div class="col-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>France</h3>
+                    </div>
+                    <img class="card-img-top" src="lib/img/eiffelTower.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Book a trip to France</h4>
+                        <p class="card-text">
+                            Get your vacation with a special discount on this Winter. <br>
+                            Ever imagined walking on the streets of Paris? Taking photos at Arc de Triomphe?<br>
+                            Book your trip to Paris and win a stay at Hôtel Du Louvre. <br>
+                            <i>Only on FlyBye.</i>
+                        </p>
+                        <a href="#" class="btn btn-primary"><strong>Book Now</strong></a>
+                    </div>
+                    <footer class="card-footer">
+                        Only available under certain conditions
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-4 ">
+                <div class="card ">
+                    <div class="card-header">
+                        <h3>Brazil</h3>
+                    </div>
+                    <img class="card-img-top" src="lib/img/brazilBoat.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Book a trip to Brazil</h4>
+                        <p class="card-text">
+                            Get your vacation with a special discount on this Winter. <br>
+                            Do you like hospitality and to feel cozy?<br> Brazil is the perfect place for you
+                            Book your bext vacation to Brazil right now and win a sightseeing tour. <br>
+                            <i>only on FLyBye</i>
+                        </p>
+                        <a href="#" class="btn btn-primary"><strong>Book Now</strong></a>
+                    </div>
+                    <footer class="card-footer">
+                        Only available under certain conditions
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Singapore</h3>
+                    </div>
+                    <img class="card-img-top" src="lib/img/singapore.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Book a trip to Singapore</h4>
+                        <p class="card-text">
+                            Get your vacation with a special discount on this Winter. <br>
+                            Excited for the Formula 1 Singapore GP, and wanna be there? <br>
+                            Book your trip to the day of the race and win one ticket to watch with a friend. <br>
+                            <i>Only on FlyBye</i>
+                        </p>
+                        <a href="#" class="btn btn-primary"><strong>Book Now</strong></a>
+                    </div>
+                    <footer class="card-footer">
+                        Only available under certain conditions
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-4 p-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Norway</h3>
+                    </div>
+                    <img class="card-img-top" src="lib/img/norwayWinter.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Book a trip to Norway</h4>
+                        <p class="card-text">
+                            Get your vacation with a special discount on this Winter. <br>
+                            Wanna impress your wife on the honeymoon?<br>
+                            Norway is definetly a go, a beautiful and cozy place to relax and enjot the nature beauty and of course the Nothern Lights 
+                            <i>Only on FlyBye</i>
+                        </p>
+                        <a href="#" class="btn btn-primary"><strong>Book Now</strong></a>
+                    </div>
+                    <footer class="card-footer">
+                        Only available under certain conditions
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <label class="form-label" for="name">Your name:</label>
+                        <input class="form-control" type="text" id="name">
+                        <label class="form-label" for="email">Your E-mail:</label>
+                        <input class="form-control" type="email" id="email">
+                        <label class="form-label" for="phone">Your phone-number</label>
+                        <input class="form-control" type="tel" id="tel">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
