@@ -167,7 +167,7 @@
                         <p class="card-text">
                             Get your vacation with a special discount on this Winter. <br>
                             Wanna impress your wife on the honeymoon?<br>
-                            Norway is definetly a go, a beautiful and cozy place to relax and enjot the nature beauty and of course the Nothern Lights 
+                            Norway is definetly a go, a beautiful and cozy place to relax and enjoy the nature beauty and of course the Nothern Lights 
                             <i>Only on FlyBye</i>
                         </p>
                         <a href="#" class="btn btn-primary"><strong>Book Now</strong></a>
@@ -183,14 +183,35 @@
             <div class="row">
                 <div class="col">
                     <h2>Contact Us</h2>
-                    <form>
+                    <form id="contact">
                         <label class="form-label" for="name">Your name:</label>
-                        <input class="form-control" type="text" id="name">
+                        <input class="form-control w-75" type="text" id="name">
                         <label class="form-label" for="email">Your E-mail:</label>
-                        <input class="form-control" type="email" id="email">
+                        <input class="form-control w-75" type="email" id="email">
                         <label class="form-label" for="phone">Your phone-number</label>
-                        <input class="form-control" type="tel" id="tel">
+                        <input class="form-control w-75" type="tel" id="tel">
+                        <div class="form-check form-switch">
+                            <label for="accept-terms">I've read and i agree with the terms</label>
+                            <input id="accept-terms" class="form-check-input" type="checkbox">
+                        </div>
+                        <button class="btn btn-success" type="button">Send</button>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div data-bs-autohide="false" class="toast" id="alert-message">
+                <header class="toast-header">
+                    <strong>You got 50% OFF</strong>
+                </header>
+                <div class="toast-body">
+                    Click on dismiss to claim the prize
+                    <div class="mt-2 pt-2 border-top">
+                        <button data-bs-dismiss="toast" class="btn btn-primary">
+                            Dismiss
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
